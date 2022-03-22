@@ -1,1 +1,1 @@
-web: gunicorn app:portapp
+web: gunicorn wsgi:portapp
