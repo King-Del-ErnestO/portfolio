@@ -2,6 +2,10 @@
     margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .allmighty{
     height: 100vh;
     background-image: url(../img/2abb.jpg);
@@ -9,6 +13,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 2.2%;
+}
+
+.contactpage{
+    background-image: url(../img/backend3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 
@@ -261,6 +271,36 @@ footer{
 
 
 @media (min-width: 0px) and (max-width: 660px) {
+
+    html{
+    width:100%;
+    height:100%;
+}
+    .allmighty h2{
+    font-size: 40px;
+    }
+    .allmighty li{
+    display: inline-block;
+    padding: 0px;
+    line-width: 10px;
+    margin: 0px 10px;
+    }
+    .allmighty a.nav-link{
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 1rem;
+    }
+    .allmighty button.btnn{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    }
+    .allmighty span.nav-btn{
+    display: inline-block;
+    margin: 0px;
+    font-size: 20px;
+    }
     .newslatter form button{
     bottom:0.5px;
     }
@@ -293,11 +333,49 @@ footer{
     .about-me-about .about button{
         margin-bottom: 10%;
     }
-    .btn1, .btn2, .btn3{
+    .btn1, .btn2, .btn3, .btn4, .btn5{
         margin-top: 10%;
+    }
+
+    .contactpage body{
+    background-size: contain;
+    }
+    .contactpage hr{
+        display:none;
+    }
+    .contactpage .port{
+    padding: 0px;
+    margin: 0px;
+    }
+    .contactpage .text{
+    text-align:center;
+    }
+    .contactpage{
+    background-image: url(../img/backend3.png);
+    background-repeat: repeat;
+    background-size: 100% 50%;
+
+}
+    .stack{
+    text-align:center;
+    }
+    .col-3{
+    text-align: center;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 10px 0px 0px;
+
+    }
+    .stack span.text-black{
+    padding-top:300px;
+    margin: 0px 0px 100px 0px;
     }
 }
 @media (min-width: 661px) and (max-width: 1100px){
+
+    html{
+    width:100%;
+    height:100%;
+}
     .about-me-about{
         background-color: rgb(0, 0, 0);
         }
@@ -330,4 +408,7 @@ footer{
         .btn1, .btn2, .btn3, .btn4{
             margin-top: 8%;
         }
+           .contactpage h1{
+    text-align: left;
+    }
     }
